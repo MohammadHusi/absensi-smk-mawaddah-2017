@@ -424,7 +424,7 @@
                         <label class="form-label" for="password">Password</label>
                         <div class="input-wrap">
                             <i class="fa-solid fa-lock"></i>
-                            <input class="form-control" id="password" type="password" name="password" required placeholder="Minimal 8 karakter">
+                            <input class="form-control" id="password" type="password" name="password" required placeholder="Bebas karakter apa saja (min. 4)">
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">

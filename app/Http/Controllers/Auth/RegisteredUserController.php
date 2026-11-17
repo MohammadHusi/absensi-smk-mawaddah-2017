@@ -35,7 +35,7 @@ class RegisteredUserController extends Controller
             'nama' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:50', 'alpha_dash', 'unique:users,username'],
             'email' => ['nullable', 'email', 'max:255', 'unique:users,email'],
-            'password' => ['required', 'confirmed', Password::defaults()],
+            'password' => ['required', 'string', 'min:4', 'confirmed'],
 
             // Field khusus murid
             'kelas_id' => [
@@ -68,6 +68,7 @@ class RegisteredUserController extends Controller
             'nip.unique' => 'NIP ini sudah terdaftar.',
             'nisn.unique' => 'NISN ini sudah terdaftar.',
             'password.confirmed' => 'Konfirmasi password tidak cocok.',
+            'password.min' => 'Password minimal 4 karakter (bebas karakter apa saja).',
         ]);
 
         $user = DB::transaction(function () use ($validated, $request) {
