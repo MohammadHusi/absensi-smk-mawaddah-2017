@@ -21,7 +21,11 @@
             <div class="mb-3"><label class="form-label" for="password">Password</label><div class="input-wrap"><i class="fa-solid fa-lock"></i><input class="form-control" id="password" type="password" name="password" autocomplete="current-password" required placeholder="Masukkan password"></div></div>
             <div class="form-check mb-4"><input class="form-check-input" id="remember" type="checkbox" name="remember" value="1"><label class="form-check-label small" for="remember">Ingat saya</label></div>
             <button class="btn btn-enter w-100" type="submit">Masuk <i class="fa-solid fa-arrow-right ms-2"></i></button>
-        </form><div class="login-help">Akses hanya untuk pengguna terdaftar di SMK Mawaddah.</div>
+        </form>
+        <div class="login-help">
+            Belum punya akun? <a href="{{ route('register') }}" style="color: #1a8f4c; font-weight: 700; text-decoration: none;">Daftar Akun Baru</a>
+            <div class="mt-1" style="font-size: 11px; color: #8998a2;">Akses untuk Murid, Guru, dan Admin SMK Mawaddah.</div>
+        </div>
     </div></main>
 </body>
 </html>
