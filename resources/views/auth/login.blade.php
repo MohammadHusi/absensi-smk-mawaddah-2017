@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <section class="school-panel"><div class="mark"><img src="{{ asset('logo.png') }}" alt="Logo SMK Mawaddah"></div><div class="school-heading"><div class="kicker">SMK Mawaddah Palengaan</div><h1>Sistem Informasi Absensi</h1><p>Presensi belajar yang terdata rapi, agar sekolah selalu tahu perkembangan kehadiran setiap murid.</p></div><div class="school-footer">© {{ date('Y') }} SMK Mawaddah Palengaan</div></section>
+    <section class="school-panel"><div class="mark"><img src="{{ asset('logo.png') }}" alt="Logo SMK Mawaddah"></div><div class="school-heading"><div class="kicker">SMK Mawaddah Palengaan</div><h1>Sistem Informasi Absensi<br><span style="font-size: 0.72em; font-weight: 700; color: #b8e4d8;">SMK Mawaddah Palengaan</span></h1><p>Presensi belajar yang terdata rapi, agar sekolah selalu tahu perkembangan kehadiran setiap murid.</p></div><div class="school-footer">© {{ date('Y') }} SMK Mawaddah Palengaan</div></section>
     <main class="login-panel"><div class="login-box"><div class="mini-mark"><i class="fa-solid fa-arrow-right-to-bracket"></i></div><h2>Selamat datang</h2><p>Masuk menggunakan akun sekolah Anda.</p>
         @if($errors->any())<div class="alert alert-danger py-2">{{ $errors->first() }}</div>@endif
         <form method="POST" action="{{ route('login.store') }}">@csrf
